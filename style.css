@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo{
+    margin-left: 70px;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none; 
+    line-height: 90px;
+    padding: 20px;
+    font-size: 14pt;
+    margin-right: 150px;
+}
+
+
+.icon_menu_hamburguer{
+    width: 40px;
+    height: 40px;
+} 
+
+.icon_menu{
+    width: 100px;
+    display: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+ }
+
+#menu a:hover{
+    color: orange;
+    transition: 0.3s;
+    border-bottom: 5px solid orange;
+}
+
+li{
+     display: inline;
+     padding: 20px;   
+     line-height: 50px;
+ }
+
+ section{
+     width: 100%;
+     height: 560px;
+ }
+
+ #contato{
+     background-color: white;
+     color: black;
+     height: 70px;  
+     width: 100%;  
+     position: fixed;
+     z-index: 1;
+ }
+
+ .zap{
+     padding-left: 10px;  
+     display: inline-flex; 
+ }
+
+ img{
+     max-width: 100%;
+     display: block;
+ }
+
+ .contato_zap{
+     margin-left: 200px;
+     font-size: 14pt;
+     float: left;
+     margin-top: 20px;
+ }
+
+ .solicitarOrcamento{
+     margin-right: 200px;
+     margin-top: 15px;
+     font-size: 14pt;
+     float: right;
+ }
+
+ #sobre_nos{
+     background-color: #262422;
+     height: 450px;
+     width: 100%;
+     text-align: center;  
+ }
+
+.titulo{
+    font-family: 'Otomanopee One', sans-serif;
+     font-weight: bolder;
+     font-size: 24pt;
+     color: orange;
+     text-align: center;
+     padding: 40px;
+ }
+
+ #descricao{
+    margin: auto;
+    height: 580px;
+    color: white;
+    display: flex;
+    padding: 10px;
+
+ }
+
+ .missao_visao{
+     padding: 30px
+ }
+
+ .icon_missao_visao{
+     margin-top: 30px;
+ }
+
+
+ #nossos_serviçõs{
+    background-color: #000;
+    height: 480px;
+    width: 100%;
+ }
+
+ #descricao_servicos1{
+     color: white;
+     display: flex;
+     height: 100px;
+     font-size: 16pt;  
+ }
+
+ #descricao_servicos2{
+     color: white;
+     display: flex;
+     height: 100px;
+     font-size: 16pt; 
+ 
+}
+
+ .box_servicos{
+     height: 250px;
+     width: 100%;
+     padding: 30px;
+     text-align: center;
+ }
+
+ #portifolio{
+        background-color: #262422;
+        height: 650px;
+        width: 100%;
+        text-align: center;
+ }
+
+#btn{
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+}
+
+#btn button{
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+.image_portifolio{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .col:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+ footer{
+    background-color: #000;
+    height: 480px;
+}
+
+#rodapé{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu_rodapé a{
+    margin-top: 20px;
+    color: grey; 
+    display: flex;
+}
+
+#menu_rodapé a:hover{
+    color: white;
+}
+
+#menu_rodapé li{
+    display: block;
+    padding: 5px;
+    margin-left: 30px;   
+}
+
+#formulário_rodapé{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#icones_rodapé{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.legenda{
+    margin-left: 20px;
+}
+
+.icones{
+    display: flex;
+    padding: 10px; 
+}
+
+form{
+    text-align: left;
+    border-radius: 10px;
+}
+
+input{
+    width: 380px;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items:flex-start;
+}
+
+textarea{
+    margin-left: 20px;
+}
+
+#btn2 button{
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+#btn2 button:hover{
+   color: white;
+}
+@media(max-width:1230px){
+    #menu ul{
+        font-size: 12pt;
+        line-height: 100px;
+    }
+}
+@media (max-width:800px){
+    #logo{
+        margin-left: 10px;
+    }
+    .icon_menu{
+        display: show;
+
+    }
+
+    /* #menu ul{
+        margin-top: 110px;
+        background-color: orange;
+        display: block;
+        height: 100vh;
+        width: 100%;
+    } */
+
+    #menu ul li{
+        display: block;  
+    }
+    #menu a:hover{
+        color:aliceblue;
+    }
+}
+
+@media (max-width:600px){
+    #menu{
+        position: fixed;
+        text-align: center;
+        width: 100%;
+    }
+    section{
+        height: 500px;
+    }
+
+    #contato{
+        display: none;
+    }
+    #sobre_nos{
+        height: 600px;
+        margin-top: 30px;
+    }
+    .icon_sobre_nos{
+        display: none;
+    }
+    footer{
+        height: 800px;
+    }
+    #rodapé{
+        display: block;
+        justify-content: center;
+    
+    }
+    #formulário_rodapé{
+        margin-right: 100px;
+    }
+    #icones_rodapé{
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    
+    #descricao_servicos1{
+        display: block;
+        float: left;
+        font-size: 12pt;
+        margin-left: 50px;
+    }
+    #descricao_servicos2{
+        display: block;
+        float: right;
+        font-size: 12pt;
+        margin-right: 50px;
+    }
+    .box_servicos{
+        height: 80px;
+        padding: 5px;
+
+    }
+    
+}
+
+/* style galeria de fotos */
+ #menu_galeria{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.card_img{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin:10px;
+}
+
+.card_img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+.small_img{
+    height: 100%;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
